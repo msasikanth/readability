@@ -1,0 +1,19 @@
+[versions]
+agp = "8.1.4"
+android-compileSdk = "34"
+android-minSdk = "21"
+android-targetSdk = "34"
+kotlin = "1.9.21"
+ksoup = "0.1.1"
+uri-kmp = "0.0.15"
+kotlinxSerialization = "1.6.2"
+
+[libraries]
+ksoup = { module = "com.fleeksoft.ksoup:ksoup", version.ref = "ksoup" }
+uri = { module = "com.eygraber:uri-kmp", version.ref = "uri-kmp" }
+kotlinxSerialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
